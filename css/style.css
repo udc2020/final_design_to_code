@@ -1,0 +1,260 @@
+/* =============================================================================
+================================= all contents =================================
+0.import fonts
+1.framework 
+
+
+
+=============================================================================
+=============================================================================*/
+
+/* ======================== F O N T S ========================*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* ======================== F O N T S ========================*/
+
+/* ======================== F R A M E W O R K S ========================*/
+
+
+:root{
+    --main-color : #00FF00;
+    --black      : #050707;
+    --font       :'Righteous', cursive;
+}
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black);
+    font-family: var(--font);
+    overflow-y: hidden;
+}
+
+button{
+    border: none;
+}
+
+a{
+    color: inherit;
+    
+}
+
+.circel {
+    border-radius: 100%;
+}
+a:hover,.active-color {
+    color: var(--main-color);
+}
+.flex-column-sp{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-menu ,.right-menu{
+    width: 90px;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    color: #fff;
+}
+
+.header-icon {
+    padding-top: 1.5em;
+    text-align: center;
+   
+}
+.header-icon button{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    color: #fff;
+}
+.header-icon button i {
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 2.5rem;
+    
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ======================== F R A M E W O R K S ========================*/
+
+/* ======================== L E F T M U N E ========================*/
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr minmax(400px ,7fr) minmax(700px ,11fr) 1fr ;
+}
+.social-icons{
+    height: 8em;
+}
+
+
+
+/* ======================== L E F T M U N E ========================*/
+
+/* ======================== L E F T B O D Y ========================*/
+.left-body{
+    background-color: #fff;
+    padding: 4em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    justify-content: space-between;
+}
+.title-cart{
+    height: 50px;
+}
+
+.title-cart h2{
+    background-color: var(--black);
+    color: var(--main-color);
+    display: inline-block;
+    padding: 5px 1em;
+    font-size: 2rem;
+}
+.body-cart h1{
+    font-size: 8rem;
+    letter-spacing:10px;
+}
+.body-cart h3{
+    font-size: 6rem;
+    letter-spacing:17px;
+    background-color: #fff;
+    position: relative;
+    left: 18%;
+    bottom: 5%;
+    
+}
+.body-cart .text{
+    width: 67%;
+}
+.footer-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-cart .raed-more{
+    margin-top: 4em;
+    border-bottom: 1px solid var(--black);
+    text-align: right;
+    text-transform: uppercase;
+    position: relative;
+    right: 50%;
+    padding-bottom: 5px;
+}
+.footer-cart .select-color{
+    margin-top: 1em;
+    justify-self: flex-start;
+    height: 150px;
+}
+
+.color-circels{
+    padding-top: .75em;
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+.color-circle{
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+}
+.color-circle:nth-child(1){
+    background-color: #000;
+}
+.color-circle:nth-child(2){
+    background-color: #fff;
+}
+.color-circle:nth-child(3){
+    background-color: #4AE8F9;
+}
+.prize-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prize-section p{
+   font-size: 2rem;
+}
+.prize-section button{
+    background-color: var(--main-color);
+    font-size: 2rem;
+    letter-spacing :5px;
+    padding: 5px .5em;
+    margin-right: 1em;
+    font-family: var(--font);
+}
+
+/* ======================== L E F T B O D Y ========================*/
+
+/* ======================== R I G H T B O D Y ========================*/
+.right-body{
+    border-right:.05px solid #efefef81;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    position: relative;
+}
+
+.review{
+    align-self: flex-end;
+}
+.review-text{
+    color: #fff;
+    text-align: right;
+    padding-bottom: 5px;
+}
+.stars{
+    font-size: 1.25rem;
+}
+.play-icon{
+    font-size: 2rem;
+    display: inline;
+    color: #828383;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* ======================== R I G H T B O D Y ========================*/
+
+/* ======================== R I G H T M E N U ========================*/
+.right-mune{
+    border-left:.05px solid #efefef13;
+}
+.right-menu .circel{
+    border: 1px solid #828383;
+    width: 20px;
+    height: 20px;
+    margin: 1em;
+    padding: 5px;
+
+}
+.nav-circels .nav-active{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #efefefed;
+}
+.left-icons{
+    height: 3em;
+    color: #828383;
+}
+/* ======================== R I G H T M E N U ========================*/
